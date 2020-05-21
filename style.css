@@ -1,0 +1,300 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    max-width: 480px;
+    margin: auto;
+    /* background-color: #ccc; */
+    height: auto;
+
+}
+#nav-bar ul#nav-links{
+    display: none;
+}
+#nav-bar a.icon {
+    /* background: #000; */
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#nav-bar .logo{
+    padding-top: 20px;
+    margin-left: -50px;
+}
+
+section{
+    padding: 20px 10px;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.btn{
+    background-color: rgb(0, 0, 255);/*#F3513C*/
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+}
+section .title{
+    font-size: 30px;
+}
+
+.grey-text{
+    color: #9f9fa1;
+    font-size: 14px;
+}
+header nav{
+    margin-bottom: 30px;
+}
+header nav .logo{
+    cursor: pointer;
+    /* width: 0%; */
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #242e52;
+    cursor: pointer;
+}
+main #together #images{
+    width: 90%;
+    
+    /* background: url('images/bg-tablet-pattern.svg'); */
+}
+
+main #together #images img{
+    width: 100%;
+    cursor: pointer;
+}
+ #bring{
+     width: 90%; 
+ }
+#images{
+    width: 80%;
+}
+main #lists .list-numbers .heading{
+    background: rgba(129, 129, 236, 0.2);
+    padding: 10px 0px;
+    border-radius: 20px 0 0 20px;
+    right: 0;
+    width: 100%;
+    font-weight: 600;
+}
+
+main #lists .list-numbers .heading .num{
+   background: rgb(0, 0, 255);
+}
+
+main #they-said .flex .user{
+    width: 90%;
+    height: auto;
+    /* position: relative; */
+    /* top: 70px; */
+    padding: 5px 10px;
+    background-color: #ccc;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}  
+main #they-said .flex .user-img img{
+    width: 30%;
+}
+
+ main #they-said .flex .user-img{
+    /* position: absolute; */
+    top: -30%;
+    text-align: center;
+    margin-top: -50px;
+} 
+
+main #they-said #center-btn, main #they-said .title, main #they-said .user-name,main #they-said .flex .user .user-words/*, main #they-said .user-img*/{
+    text-align: center;
+}
+section#simplify{
+    background: blue;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+section#simplify #simple-btn{
+    background: #fff;
+    color: blue;
+    height: 35px;
+    margin: auto 0;
+}
+
+
+footer{
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer section#footer-contents #links a{
+    display: block;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer #logo-social{
+    margin-bottom: 0;
+    cursor: pointer;
+    padding: 0 10px;
+}
+footer #logo-social #social-media{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer #logo-social #social-media i{
+    cursor: pointer;
+    color: #fff;
+    font-size: 150%;
+    margin-right: 20px;
+}
+footer input{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+}
+
+footer .copyright{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+footer .copyright h5{
+    font-weight: normal;
+}
+
+
+@media (min-width: 680px){
+    header nav .logo, header nav ul{
+        width: 30%;
+        margin-right: 5px;
+        padding-top: 10px;
+    }
+    header nav .nav-btn{
+        width: auto;
+        margin: auto 0;
+        /* margin-right: -70px; */
+    }
+
+    
+    header nav ul{
+        /* margin-left: -100px; */
+        padding-left: 0;
+    }
+    header nav ul li{
+        display: inline-block;
+        font-size: 16px;
+    }
+
+
+    main #together #images{
+        width: 45%;
+    }
+
+    main .flex #bring, #difference{
+       order: 1; 
+       width: 40%;
+    }
+
+    main .flex #images, #lists{
+        order: 2;
+        width: 40%;
+    }
+
+    main .heading{
+        background: #fff;
+        line-height: 1.5;
+        padding-left: 0;
+    }
+    
+    main section#they-said .flex .user{
+        width: 30%;
+    }
+    main #they-said .title{
+        margin-bottom: 12%;
+    }
+    section#simplify{
+        justify-content: space-between;
+        padding: 50px;
+    }
+    
+    section#simplify .title{
+        max-width: 35%;
+        text-align: left;
+    }
+    section#simplify #simple-btn{
+        height: auto;
+        margin-top: 30px;
+    }
+
+    footer section#logo-social{
+        order: 1;
+        padding: 0;
+        
+    }
+    footer section#footer-contents{
+        order: 2;
+        padding: 0;
+    }
+    footer section#updates{
+        order: 3;
+        padding: 0;
+    }
+    footer section{
+        max-width: 30%;
+        margin-bottom: 0;
+    } 
+    footer .flex #updates form  input{
+        width: 40%;
+    }
+    footer section #updates form  .btn{
+        width: 20%;
+    }
+    footer #logo-social #social-media{
+        order: 2;
+        /*width: 40%; */
+    }
+    /* footer #logo-social #social-media i{
+
+    } */
+    footer form{
+        margin-top: 10%;
+        order: 3;
+    }
+    footer .copyright{
+        
+        display: inline;
+        position: relative;
+        /* margin-bottom: 15px; */
+    }
+}
+@media (min-width: 920px){
+    header nav ul li{
+        font-size: 18px;
+        padding-right: 10px;
+    }
+}
