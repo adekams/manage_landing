@@ -94,12 +94,14 @@ main #lists .list-numbers .heading{
     padding: 10px 0px;
     border-radius: 20px 0 0 20px;
     right: 0;
+    
     width: 100%;
     font-weight: 600;
 }
 
-main #lists .list-numbers .heading .num{
-   background: rgb(0, 0, 255);
+main #lists .list-numbers .heading span{
+   margin-right: 8px;
+   padding: 10px 20px;
 }
 
 main #they-said .flex .user{
@@ -188,7 +190,7 @@ footer .copyright h5{
 }
 
 
-@media (min-width: 680px){
+@media (min-width: 768px){
     header nav .logo, header nav ul{
         width: 30%;
         margin-right: 5px;
@@ -224,10 +226,10 @@ footer .copyright h5{
         order: 2;
         width: 40%;
     }
-
-    main .heading{
+    main #lists .list-numbers .heading
+    {
         background: #fff;
-        line-height: 1.5;
+        
         padding-left: 0;
     }
     
@@ -278,9 +280,9 @@ footer .copyright h5{
         order: 2;
         /*width: 40%; */
     }
-    /* footer #logo-social #social-media i{
-
-    } */
+    footer #logo-social #social-media i{
+        margin-right: 10px;
+    }
     footer form{
         margin-top: 10%;
         order: 3;
